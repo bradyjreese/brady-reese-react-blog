@@ -5,6 +5,9 @@
     width: 100%;
     background: white;
     color: $nav-color;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 
     .nav-title {
         display: flex;
@@ -71,7 +74,7 @@
             width: 300px;
             height: calc(100% - 65px);
             background: white;
-            position: absolute;
+            position: fixed;
             top: 65px;
             left: -300px;
             padding: 0;

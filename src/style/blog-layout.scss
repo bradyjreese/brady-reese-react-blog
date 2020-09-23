@@ -1,0 +1,11 @@
+.blog-layout {
+    display: grid;
+    grid-gap: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .blog-layout {
+        display: flex;
+        flex-direction: column;
+    }
+}

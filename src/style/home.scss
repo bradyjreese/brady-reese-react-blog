@@ -1,0 +1,28 @@
+.home {
+    h1 {
+        width: 100%;
+        color: $nav-color;
+        padding: 1.5em 0;
+    }
+
+    .new-posts-wrapper {
+        display: flex;
+    }
+
+    .pg-bg-color {
+        background: white;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home {
+        h1 {
+            margin-block-start: 1.5em;
+            margin-block-end: 1.5em;
+        }
+
+        .new-posts-wrapper {
+            flex-direction: column;
+        }
+    }
+}
