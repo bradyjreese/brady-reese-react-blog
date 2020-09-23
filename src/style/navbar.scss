@@ -1,0 +1,118 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    width: 100%;
+    background: white;
+    color: $nav-color;
+
+    .nav-title {
+        display: flex;
+        font-size: 24px;
+        font-weight: 400;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .ion-ios-menu {
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        font-size: 36px;
+        width: 65px;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+
+        // TODO remove avatar
+        .ant-avatar {
+            background: $background;
+            border: 1px solid $border;
+        }
+
+        .user-name {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding: 0 20px 0 50px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        list-style-type: none;
+
+        a {
+            padding: 0 20px 0 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: $nav-color;
+
+            &:hover {
+                color: $nav-link;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-container {
+
+        .nav-links{
+            flex-direction: column-reverse;
+            width: 300px;
+            height: calc(100% - 65px);
+            background: white;
+            position: absolute;
+            top: 65px;
+            left: -300px;
+            padding: 0;
+            padding-left: 30px;
+            transition: 300ms ease left;
+
+            a {
+                width: 100%;
+                padding: 0;
+            }
+
+            ul,
+            li,
+            .nav-avatar {
+                width: 100%;
+            }
+
+            ul {
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 0;
+                padding-top: 20px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                height: 65px;
+            }
+
+            .nav-avatar {
+                padding-top: 20px;
+            }
+
+            &.active {
+                left: 0px;
+            }
+        }
+
+        .ion-ios-menu {
+            display: flex;
+        }
+    }
+}
