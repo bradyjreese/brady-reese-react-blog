@@ -5,13 +5,13 @@ import newposts from '../../../static/assets/data/test-new';
 
 const popularDisplay = {
     1: {
-        gridArea: '1 / 2 / 3 / 3'
+        gridArea: '2 / 1 / 3 / 3'
     }
 }
 
 const newDisplay = {
     0: {
-        gridArea: '1 / 1 / 2 / 3',
+        gridArea: '2 / 1 / 2 / 3',
         height: '300px'
     },
     1: {
@@ -28,7 +28,7 @@ const compileStyles = function (posts, config) {
     posts.forEach((post, index) => {
         post.style = config[index]
         post.author = 'Brady Reese'
-        post.description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+        post.description = 'Short description for blog post goes here.'
     })
 }
 

@@ -4,7 +4,56 @@
     height: calc(100vh - 65px);
     margin-top: -20px;
 
-    .content-info-wrapper {
+    .contact-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $background;
 
+        .contact-bio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .text-bio {
+                text-align: justify;
+                font-size: 18px;
+                line-height: 10px;
+            }
+
+            .bio {
+                margin-top: 25px;
+                font-size: 26px;
+            }
+        }
     }
+}
+
+@media screen and (max-width: 900px) {
+    .content-page-wrapper {
+        display: flex;
+        flex-direction: column;
+        background: $background;
+
+        .contact-info-wrapper {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .contact-bio {
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .text-bio {
+                font-size: 25px;
+                line-height: normal;
+                white-space: nowrap;
+            }
+        }
+    }   
 }

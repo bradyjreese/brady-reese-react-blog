@@ -14,13 +14,13 @@ export default function BlogGrid ({posts}) {
         return posts.slice(firstIndex, lastIndex)
     }, [current, pageSize])
 
-    useEffect(() => {
-        window.scroll({
-            top: 500,
-            left: 0,
-            behavior: 'smooth'
-        })
-    })
+    // useEffect(() => {
+    //     window.scroll({
+    //         top: 500,
+    //         left: 0,
+    //         behavior: 'smooth'
+    //     })
+    // })
 
     return (
         <section className='blog-grid-wrapper'>
@@ -32,7 +32,6 @@ export default function BlogGrid ({posts}) {
                             <Link to={{
                                 pathname:'/blog-detail',
                                 state: {post}
-                                
                             }}>
                                 <img src={require(`../../../static/assets/images/${post.image}`)} alt={post.image} />
                             </Link>
@@ -51,7 +50,12 @@ export default function BlogGrid ({posts}) {
                         <p className='description-text'>
                             {post.description}
                         </p>
-                        <Link to={post.link}>Read More...</Link>
+                        <Link to={{
+                            pathname:'/blog-detail',
+                            state: {post}
+                        }}>
+                            Read More...
+                        </Link>
                     </div>
                 ))}
             </section>
@@ -63,6 +67,7 @@ export default function BlogGrid ({posts}) {
                 total={posts.length}
                 defaultCurrent={current}
                 onChange={setCurrent}
+                // TODO fix scrolling on pagination
             />
         </section>
     )
