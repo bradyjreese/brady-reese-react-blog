@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CategoryRow } from './';
 
 export default function BlogPost ({ post, categoryTag }) {
@@ -8,7 +9,14 @@ export default function BlogPost ({ post, categoryTag }) {
     const style = screenWidth > 900 ? {...imageBackground, ...post.style} : imageBackground
 
     return(
-        <a className='blog-post overlay' style={style} href={post.link}>
+        <Link
+            to={{
+                pathname:'/blog-detail',
+                state: {post}
+            }}
+            className='blog-post overlay'
+            style={style}
+        >
             <div className='image-text' style={{justifyContent: categoryTag ? 'space-between' : 'flex-end'}}>
                 <CategoryRow tags={post.categories} />
                 <div>
@@ -16,6 +24,6 @@ export default function BlogPost ({ post, categoryTag }) {
                     <span className='image-date'>{post.date}</span>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }

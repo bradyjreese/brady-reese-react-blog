@@ -17,10 +17,11 @@ const navLinks = [
         title: 'Contact Me',
         path: '/contact-me'
     },
-    {
-        title: 'Login',
-        path: '/login'
-    },
+    // TODO link login functionality
+    // {
+    //     title: 'Login',
+    //     path: '/login'
+    // },
 ]
 
 export default function Navbar ({user}) {
