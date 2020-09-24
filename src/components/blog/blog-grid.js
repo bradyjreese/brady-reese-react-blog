@@ -29,7 +29,11 @@ export default function BlogGrid ({posts}) {
                     <div key={index} className='post-wrapper'>
                         <figure>
                             {/* TODO Change link */}
-                            <Link to={`/blog-detail`}>
+                            <Link to={{
+                                pathname:'/blog-detail',
+                                state: {post}
+                                
+                            }}>
                                 <img src={require(`../../../static/assets/images/${post.image}`)} alt={post.image} />
                             </Link>
                         </figure>

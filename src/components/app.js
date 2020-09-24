@@ -2,8 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import Navbar from './navbar'
-import RenderPage from './render-page'
-import BlogDetail from './pages/blog-detail'
+import Home from './pages/home';
+import ContactMe from './pages/contact-me';
+import BlogDetail from './pages/blog-detail';
+import Login from './pages/login';
 import Icons from '../helpers/icons';
 
 export default function App() {
@@ -20,9 +22,11 @@ export default function App() {
       <div className='app'>
         <Navbar user={user} />
         <Switch>
-          <Route path='/:page' component={RenderPage} />
-          {/* TODO Blog Links */}
-          <Route path='/blog-detail' render={() => (<BlogDetail />)} />
+          <Route exact path='/' component={Home} />
+          <Route path='/contact-me' component={ContactMe} />
+          <Route path='/blog-detail' component={BlogDetail} />
+          <Route path='/login' component={Login} />
+          {/* TODO Fix Links */}
           <Route path='/' render={() => <Redirect to='/home' />} />
           <Route component={() => 404} />
         </Switch>
