@@ -1,0 +1,10 @@
+.content-page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 65px);
+    margin-top: -20px;
+
+    .content-info-wrapper {
+
+    }
+}

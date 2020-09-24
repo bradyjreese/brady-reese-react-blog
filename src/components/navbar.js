@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Avatar } from 'antd';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const navLinks = [
     {
         title: 'Home',
         path: '/'
     },
-    {
-        title: 'Blog',
-        path: '/blog'
-    },
+    // TODO more blog functionality
+    // {
+    //     title: 'Blog',
+    //     path: '/blog'
+    // },
     {
         title: 'Contact Me',
         path: '/contact-me'
@@ -38,7 +40,8 @@ export default function Navbar ({user}) {
                 </ul>
                 {/* TODO remove Avatar */}
                 <span className='nav-avatar'>
-                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} />
+                    <FontAwesomeIcon icon='user-tie' style={{fontSize: '20px'}} />
+                    {/* <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} /> */}
                     <span className='user-name'>{`${user.firstName} ${user.lastName}`}</span>
                 </span>
             </div>

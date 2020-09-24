@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import Blog from './pages/blog';
 
 import Navbar from './navbar'
 import RenderPage from './render-page'
+import BlogDetail from './pages/blog-detail'
+import Icons from '../helpers/icons';
 
 export default function App() {
   // TODO update user
@@ -12,6 +13,8 @@ export default function App() {
     lastName: 'Reese'
   }
 
+  Icons();
+
   return (
     <Router>
       <div className='app'>
@@ -19,7 +22,7 @@ export default function App() {
         <Switch>
           <Route path='/:page' component={RenderPage} />
           {/* TODO Blog Links */}
-          {/* <Route path='/b/:slug' component={Blog} /> */}
+          <Route path='/blog-detail' render={() => (<BlogDetail />)} />
           <Route path='/' render={() => <Redirect to='/home' />} />
           <Route component={() => 404} />
         </Switch>
