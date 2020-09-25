@@ -6,41 +6,27 @@ export default [
         date: moment().format('MMMM DD, YYYY'),
         categories: ['Politics'],
         link: '#',
-        image: 'bigdaddy.jpg'
+        image: 'politics-one.jpg'
     },
     {
         title: 'Gaming Test',
         date: moment().format('MMMM DD, YYYY'),
         categories: ['Gaming'],
         link: '#',
-        image: 'crondose.jpg'
+        image: 'ps5.jpg'
     },
     {
         title: 'Multiple Categories Test',
         date: moment().format('MMMM DD, YYYY'),
         categories: ['Politics', 'News'],
         link: '#',
-        image: 'dashtrack.jpg'
+        image: 'usa.jpg'
     },
     {
-        title: 'News Test',
+        title: 'Programming Test',
         date: moment().format('MMMM DD, YYYY'),
-        categories: ['News'],
+        categories: ['Programming'],
         link: '#',
-        image: 'dailysmarty.jpg'
+        image: 'programming-one.jpg'
     },
-    // {
-    //     title: 'Programming Test',
-    //     date: moment().format('MMMM DD, YYYY'),
-    //     categories: ['Programming'],
-    //     link: '#',
-    //     image: 'devcamp.jpg'
-    // },
-    // {
-    //     title: 'Three Categories Test',
-    //     date: moment().format('MMMM DD, YYYY'),
-    //     categories: ['Gaming', 'Programming', 'News'],
-    //     link: '#',
-    //     image: 'littlesister.jpg'
-    // }
 ]

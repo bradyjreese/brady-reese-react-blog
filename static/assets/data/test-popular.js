@@ -6,41 +6,34 @@ export default [
         date: moment().format('MMMM DD, YYYY'),
         categories: ['Politics'],
         link: '#',
-        image: 'quip.jpg'
+        image: 'white-house.jpg'
     },
     {
         title: 'Another Gaming Test',
         date: moment().format('MMMM DD, YYYY'),
         categories: ['Gaming'],
         link: '#',
-        image: 'login.jpg'
+        image: 'xboxsx.jpg'
     },
     {
         title: 'Another Multiple Categories Test',
         date: moment().format('MMMM DD, YYYY'),
         categories: ['Politics', 'News'],
         link: '#',
-        image: 'eventbrite.jpg'
+        image: 'news-blue.jpg'
     },
     {
         title: 'Another News Test',
         date: moment().format('MMMM DD, YYYY'),
         categories: ['News'],
         link: '#',
-        image: 'toastability.jpg'
+        image: 'newspaper.jpg'
     },
     {
         title: 'Another Programming Test',
         date: moment().format('MMMM DD, YYYY'),
         categories: ['Programming'],
         link: '#',
-        image: 'edutechional.jpg'
+        image: 'programming-two.jpg'
     },
-    // {
-    //     title: 'Another Three Categories Test',
-    //     date: moment().format('MMMM DD, YYYY'),
-    //     categories: ['Gaming', 'Programming', 'News'],
-    //     link: '#',
-    //     image: 'open-devos.jpg'
-    // }
 ]
