@@ -39,10 +39,8 @@ export default function Navbar ({user}) {
                         </li>
                     ))}
                 </ul>
-                {/* TODO remove Avatar */}
                 <span className='nav-avatar'>
                     <FontAwesomeIcon icon='user-tie' style={{fontSize: '20px'}} />
-                    {/* <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} /> */}
                     <span className='user-name'>{`${user.firstName} ${user.lastName}`}</span>
                 </span>
             </div>

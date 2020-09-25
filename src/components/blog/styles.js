@@ -1,4 +1,3 @@
-// TODO change colors
 const categoryColors = {
     'Politics': 'rgb(255,59,48)',
     'Gaming': 'rgb(0,113,164)',

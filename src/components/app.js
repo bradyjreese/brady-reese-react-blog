@@ -9,7 +9,6 @@ import Login from './pages/login';
 import Icons from '../helpers/icons';
 
 export default function App() {
-  // TODO update user
   const user = {
     firstName: 'Brady',
     lastName: 'Reese'
