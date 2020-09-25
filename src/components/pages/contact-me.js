@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function ContactMe () {
     return (
         <div className='content-page-wrapper'>
-            <div className='contact-info-wrapper'>
+            <div className='content-info-wrapper'>
                 <div className='contact-bio'>
                     <FontAwesomeIcon icon='info' style={{color: '#2997ff', fontSize: '24px'}} />
                     <div className='text-bio'>

@@ -3,7 +3,12 @@ import loginPicture from '../../../static/assets/images/login.jpg'
 
 export default function Login () {
     return (
-        <div className='content-page-wrapper'>
+        <section className='content-page-wrapper'>
+            <div className='content-info-wrapper'>
+                <h1>LOGIN/SIGNUP</h1>
+                <input />
+                <input />
+            </div>
             <div
                 className='picture-wrapper'
                 style={{
@@ -12,10 +17,6 @@ export default function Login () {
                     backgroundPosition: "center",
                 }}    
             />
-            <div className='content-info-wrapper'>
-
-            </div>
-            
-        </div>
+        </section>
     )
 }
